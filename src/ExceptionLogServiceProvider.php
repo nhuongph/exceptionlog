@@ -27,5 +27,6 @@ class ExceptionLogServiceProvider extends ServiceProvider
     public function register()
     {
         app()->register(EventServiceProvider::class);
+        app()->register(\BaoPham\DynamoDb\DynamoDbServiceProvider::class);
     }
 }
