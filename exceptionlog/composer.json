@@ -1,0 +1,29 @@
+{
+    "name": "nhuongph/exceptionlog",
+    "description": "Log exception in to dynamodb",
+    "type": "library",
+    "require": {
+        "baopham/dynamodb": "^4.5.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NhuongPH",
+            "email": "nhuong.ph@neo-lab.vn"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "NhuongPH\\ExceptionLog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NhuongPH\\ExceptionLog\\ExceptionLogServiceProvider"
+            ]
+        }
+    }
+
+}
